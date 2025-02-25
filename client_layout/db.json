@@ -1,0 +1,1031 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Bánh trứng 2 vị Matcha-Cacao nhân choco",
+      "description": "Other specified disorders of tympanic membrane",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 37000,
+      "stock": 37,
+      "images": [
+        {
+          "url": "../images/products/2vichoco.jpg",
+          "alt": "Banh trung 2 vi matcha-cacao nhan choco"
+        }
+      ],
+      "likes": 5,
+      "tags": [
+        ""
+      ],
+      "created_at": "04/06/2024"
+    },
+    {
+      "id": 2,
+      "name": "Bánh trứng 2 vị Matcha-Cacao nhân double phô mai",
+      "description": "Oth nondisp fx of base of 1st MC bone, unsp hand, 7thD",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 45000,
+      "stock": 53,
+      "images": [
+        {
+          "url": "../images/products/2vix2pm.jpg",
+          "alt": "Banh trung 2 vi matcha-cacao nhan double pho mai"
+        }
+      ],
+      "likes": 73,
+      "tags": [
+        ""
+      ],
+      "created_at": "30/12/2024"
+    },
+    {
+      "id": 3,
+      "name": "Bánh trứng 2 vị Matcha-Cacao",
+      "description": "Physeal arrest, forearm",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 33000,
+      "stock": 22,
+      "images": [
+        {
+          "url": "../images/products/2vi.jpg",
+          "alt": "Banh trung 2 vi matcha-cacao"
+        }
+      ],
+      "likes": 14,
+      "tags": [
+        ""
+      ],
+      "created_at": "02/04/2024"
+    },
+    {
+      "id": 4,
+      "name": "Bánh trứng nguyên vị rong biển chà bông phô mai",
+      "description": "Disp fx of head of l rad, 7thQ",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 43000,
+      "stock": 20,
+      "images": [
+        {
+          "url": "../images/products/rbcbpm.jpg",
+          "alt": "Banh trung nguyen vi rong bien cha bong pho mai"
+        }
+      ],
+      "likes": 35,
+      "tags": [
+        ""
+      ],
+      "created_at": "25/06/2024"
+    },
+    {
+      "id": 5,
+      "name": "Bánh trứng nguyên vị rong biển phô mai xúc xích",
+      "description": "Toxic effect of venom of Australian snake, accidental, init",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 41000,
+      "stock": 40,
+      "images": [
+        {
+          "url": "../images/products/rbpmxx.jpg",
+          "alt": "Banh trung nguyen vi rong bien pho mai xuc xich"
+        }
+      ],
+      "likes": 32,
+      "tags": "PF",
+      "created_at": "23/06/2024"
+    },
+    {
+      "id": 6,
+      "name": "Bánh trứng nguyên vị rong biển phô mai trứng muối",
+      "description": "Breakdown of urinary electronic stimulator device, sequela",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 45000,
+      "stock": 12,
+      "images": [
+        {
+          "url": "../images/products/rbpmtm.jpg",
+          "alt": "Banh trung nguyen vi rong bien pho mai trung muoi"
+        }
+      ],
+      "likes": 52,
+      "tags": [
+        ""
+      ],
+      "created_at": "11/09/2024"
+    },
+    {
+      "id": 7,
+      "name": "Bánh trứng nguyên vị phô mai xúc xích chà bông",
+      "description": "Vis def/sptl nglct following cerebral infarction",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 39000,
+      "stock": 89,
+      "images": [
+        {
+          "url": "../images/products/pmxxcb.jpg",
+          "alt": "Banh trung nguyen vi pho mai xuc xich cha bong"
+        }
+      ],
+      "likes": 38,
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "22/09/2024"
+    },
+    {
+      "id": 8,
+      "name": "Bánh trứng nguyên vị double phô mai trứng muối",
+      "description": "Hemorrhage from tracheostomy stoma",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 45000,
+      "stock": 82,
+      "images": [
+        {
+          "url": "../images/products/x2pmtm.jpg",
+          "alt": "Banh trung nguyen vi double pho mai trung muoi"
+        }
+      ],
+      "likes": 95,
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "11/02/2024"
+    },
+    {
+      "id": 9,
+      "name": "Bánh trứng nguyên vị",
+      "description": "Other acute osteomyelitis, humerus",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 25000,
+      "stock": 78,
+      "images": [
+        {
+          "url": "../images/products/nv.jpg",
+          "alt": "Banh trung nguyen vi"
+        }
+      ],
+      "likes": 64,
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "06/09/2024"
+    },
+    {
+      "id": 10,
+      "name": "Bánh trứng nguyên vị nhân choco",
+      "description": "Retractile testis",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 33000,
+      "stock": 82,
+      "images": [
+        {
+          "url": "../images/products/choco.jpg",
+          "alt": "Banh trung nguyen vi nhan choco"
+        }
+      ],
+      "likes": 62,
+      "tags": [
+        ""
+      ],
+      "created_at": "29/06/2024"
+    },
+    {
+      "id": 11,
+      "name": "Bánh trứng nguyên vị nhân double phô mai",
+      "description": "Pnctr w fb of l little finger w damage to nail, subs",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 37000,
+      "stock": 22,
+      "images": [
+        {
+          "url": "../images/products/x2pm.jpg",
+          "alt": "Banh trung nguyen vi double pho mai"
+        }
+      ],
+      "likes": 77,
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "22/04/2024"
+    },
+    {
+      "id": 12,
+      "name": "Bánh trứng nguyên vị nhân rong biển double phô mai",
+      "description": "Drown due to oth accident to water-skis, sequela",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 43000,
+      "stock": 70,
+      "images": [
+        {
+          "url": "../images/products/rbx2pm.jpg",
+          "alt": "Banh trung nguyen vi nhan rong bien double pho mai"
+        }
+      ],
+      "likes": 34,
+      "tags": [
+        ""
+      ],
+      "created_at": "27/06/2024"
+    },
+    {
+      "id": 13,
+      "name": "Bánh trứng nguyên vị nhân phô mai chà bông",
+      "description": "Traum hemor r cereb w LOC of 1-5 hrs 59 minutes, sequela",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 37000,
+      "stock": 19,
+      "images": [
+        {
+          "url": "../images/products/pmcb.jpg",
+          "alt": "Banh trung nguyen vi nhan pho mai cha bong"
+        }
+      ],
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "07/05/2024"
+    },
+    {
+      "id": 14,
+      "name": "Bánh trứng cacao nhân double phô mai",
+      "description": "Displaced intertrochanteric fracture of unsp femur, sequela",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 35000,
+      "stock": 39,
+      "images": [
+        {
+          "url": "../images/products/cacaox2pm.jpg",
+          "alt": "Banh trung cacao nhan double pho mai"
+        }
+      ],
+      "likes": 21,
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "31/03/2024"
+    },
+    {
+      "id": 15,
+      "name": "Bánh trứng cacao nhân choco",
+      "description": "Sltr-haris Type II physl fx lower end ulna, right arm, init",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 42000,
+      "stock": 19,
+      "images": [
+        {
+          "url": "../images/products/cacaochoco.jpg",
+          "alt": "Banh trung cacao nhan choco"
+        }
+      ],
+      "likes": 80,
+      "tags": [
+        ""
+      ],
+      "created_at": "07/05/2024"
+    },
+    {
+      "id": 16,
+      "name": "Bánh trứng matcha nhân choco",
+      "description": "Oth osteopor w crnt path fx, l femur, subs for fx w malunion",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 35000,
+      "stock": 75,
+      "images": [
+        {
+          "url": "../images/products/matchachoco.jpg",
+          "alt": "Banh trung matcha nhan choco"
+        }
+      ],
+      "likes": 76,
+      "tags": [
+        ""
+      ],
+      "created_at": "13/02/2024"
+    },
+    {
+      "id": 17,
+      "name": "Bánh trứng matcha nhân double phô mai",
+      "description": "External constriction, left knee",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 42000,
+      "stock": 28,
+      "images": [
+        {
+          "url": "../images/products/matchax2pm.jpg",
+          "alt": "Banh trung mathca nhan double pho mai"
+        }
+      ],
+      "likes": 3,
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "24/06/2024"
+    },
+    {
+      "id": 18,
+      "name": "Bánh trứng than tre nhân trứng muối double phô mai",
+      "description": "Corrosion of unspecified degree of right ankle, subs encntr",
+      "category": "Bánh trứng gà non HongKong",
+      "price": 49000,
+      "stock": 79,
+      "images": [
+        {
+          "url": "../images/products/tttmx2pm.jpg",
+          "alt": "Banh trung than tre trung muoi double pho mai"
+        }
+      ],
+      "likes": 45,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "07/07/2024"
+    },
+    {
+      "id": 19,
+      "name": "Lài sữa gạo matcha",
+      "description": "Laceration of brachial artery, right side, subs encntr",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 30000,
+      "stock": 22,
+      "images": [
+        {
+          "url": "../images/products/gaomatcha.jpg",
+          "alt": "Lai sua gao matcha"
+        }
+      ],
+      "likes": 15,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "10/05/2024"
+    },
+    {
+      "id": 20,
+      "name": "Lài sữa gạo cacao",
+      "description": "Memory deficit following other ntrm intcrn hemorrhage",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 30000,
+      "stock": 56,
+      "images": [
+        {
+          "url": "../images/products/gaocacao.jpg",
+          "alt": "Lai sua gao cacao"
+        }
+      ],
+      "likes": 60,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "14/12/2024"
+    },
+    {
+      "id": 21,
+      "name": "Lài sữa gạo",
+      "description": "Oth injury of right internal jugular vein, subs encntr",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 30000,
+      "stock": 77,
+      "images": [
+        {
+          "url": "../images/products/tsgao.jpg",
+          "alt": "Lai sua gao"
+        }
+      ],
+      "likes": 87,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "19/01/2025"
+    },
+    {
+      "id": 22,
+      "name": "Trà sữa hoa mật ong",
+      "description": "Displ commnt fx shaft of l femur, init for opn fx type I/2",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 35000,
+      "stock": 88,
+      "images": [
+        {
+          "url": "../images/products/tshoa.jpg",
+          "alt": "Tra sua hoa"
+        }
+      ],
+      "likes": 83,
+      "tags": [
+        "Đặc trưng",
+        "Món mới"
+      ],
+      "created_at": "23/02/2024"
+    },
+    {
+      "id": 23,
+      "name": "Trà sữa kem trứng",
+      "description": "Nondisp subtrochnt fx r femur, subs for clos fx w delay heal",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 39000,
+      "stock": 56,
+      "images": [
+        {
+          "url": "../images/products/tskt.jpg",
+          "alt": "Tra sua kem trung"
+        }
+      ],
+      "likes": 83,
+      "tags": [
+        ""
+      ],
+      "created_at": "12/02/2024"
+    },
+    {
+      "id": 24,
+      "name": "Trà sữa truyền thống",
+      "description": "Intentional self-harm by sharp glass",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 30000,
+      "stock": 47,
+      "images": [
+        {
+          "url": "../images/products/tstt.jpg",
+          "alt": "Tra sua truyen thong"
+        }
+      ],
+      "likes": 32,
+      "tags": [
+        ""
+      ],
+      "created_at": "15/10/2024"
+    },
+    {
+      "id": 25,
+      "name": "Trà sữa cacao",
+      "description": "Maternal care for other malpresentation of fetus, fetus 1",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 39000,
+      "stock": 22,
+      "images": [
+        {
+          "url": "../images/products/tscacao.jpg",
+          "alt": "Tra sua cacao"
+        }
+      ],
+      "likes": 19,
+      "tags": [
+        ""
+      ],
+      "created_at": "23/05/2024"
+    },
+    {
+      "id": 26,
+      "name": "Trà sữa matcha",
+      "description": "Oth public administrative building as place",
+      "category": "Say Cheese ĐẬM VỊ",
+      "price": 30000,
+      "stock": 47,
+      "images": [
+        {
+          "url": "../images/products/tsmatcha.jpg",
+          "alt": "Tra sua matcha"
+        }
+      ],
+      "likes": 60,
+      "tags": [
+        ""
+      ],
+      "created_at": "15/12/2024"
+    },
+    {
+      "id": 27,
+      "name": "Sữa tươi cafe bạc hà kem cheese",
+      "description": "Unsp injury of blood vessel of unsp finger, subs encntr",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 42000,
+      "stock": 36,
+      "images": [
+        {
+          "url": "../images/products/stcfbhkc.jpg",
+          "alt": "Sua tuoi cafe bac ha kem cheese"
+        }
+      ],
+      "likes": 62,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "15/09/2024"
+    },
+    {
+      "id": 28,
+      "name": "Sữa tươi cafe bạc hà",
+      "description": "Intestine transplant infection",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 35000,
+      "stock": 70,
+      "images": [
+        {
+          "url": "../images/products/stcfbh.jpg",
+          "alt": "Sua tuoi cafe bac ha"
+        }
+      ],
+      "likes": 32,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "08/04/2024"
+    },
+    {
+      "id": 29,
+      "name": "Sữa tươi cafe hạnh nhân",
+      "description": "Oth diabetes with stable prolif diabetic rtnop, right eye",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 35000,
+      "stock": 70,
+      "images": [
+        {
+          "url": "../images/products/stcfhn.jpg",
+          "alt": "Sua tuoi cafe hanh nhan"
+        }
+      ],
+      "likes": 11,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "13/07/2024"
+    },
+    {
+      "id": 30,
+      "name": "Sữa tươi cafe blue",
+      "description": "Car passenger injured in collision w pedal cycle in traf",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 35000,
+      "stock": 90,
+      "images": [
+        {
+          "url": "../images/products/stcfb.jpg",
+          "alt": "Sua tuoi cafe blue"
+        }
+      ],
+      "likes": 64,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "10/05/2024"
+    },
+    {
+      "id": 31,
+      "name": "Sữa tươi cafe sương sáo",
+      "description": "Squamous cell carcinoma skin/ unsp upper limb, inc shoulder",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 35000,
+      "stock": 56,
+      "images": [
+        {
+          "url": "../images/products/stcfss.jpg",
+          "alt": "Sua tuoi cafe suong sao"
+        }
+      ],
+      "likes": 36,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "23/10/2024"
+    },
+    {
+      "id": 32,
+      "name": "Sữa tươi matcha trân châu đường đen",
+      "description": "Laceration of dorsal vein of unspecified foot, subs encntr",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 43000,
+      "stock": 70,
+      "images": [
+        {
+          "url": "../images/products/stmtcdd.jpg",
+          "alt": "Sua tuoi mathca tran chau duong den"
+        }
+      ],
+      "likes": 15,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "18/12/2024"
+    },
+    {
+      "id": 33,
+      "name": "Sữa tươi khoai môn",
+      "description": "Toxic effect of tobacco cigarettes, undetermined, init",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 30000,
+      "stock": 78,
+      "images": [
+        {
+          "url": "../images/products/stkm.jpg",
+          "alt": "Sua tuoi khoai mon"
+        }
+      ],
+      "likes": 78,
+      "tags": [
+        "Bán chạy",
+        "Đặc trưng"
+      ],
+      "created_at": "31/07/2024"
+    },
+    {
+      "id": 34,
+      "name": "Sữa tươi cafe",
+      "description": "Pedestrian injured in traf involving oth mv, subs",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 30000,
+      "stock": 17,
+      "images": [
+        {
+          "url": "../images/products/stcf.jpg",
+          "alt": "Sua tuoi cafe"
+        }
+      ],
+      "likes": 100,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "09/09/2024"
+    },
+    {
+      "id": 35,
+      "name": "Sữa tươi trân châu đường đen",
+      "description": "Adverse effect of unsp hormones and synthetic sub, sequela",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 35000,
+      "stock": 91,
+      "images": [
+        {
+          "url": "../images/products/sttcdd.jpg",
+          "alt": "Sua tuoi tran chau duong den"
+        }
+      ],
+      "likes": 99,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "27/04/2024"
+    },
+    {
+      "id": 36,
+      "name": "Sữa tươi cafe kem cheese",
+      "description": "Disp fx of distal phalanx of r thm, subs for fx w nonunion",
+      "category": "Say Cheese THƠM BÉO",
+      "price": 39000,
+      "stock": 25,
+      "images": [
+        {
+          "url": "../images/products/stcfkc.jpg",
+          "alt": "Sua tuoi cafe kem cheese"
+        }
+      ],
+      "likes": 38,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "09/06/2024"
+    },
+    {
+      "id": 37,
+      "name": "Sữa tươi bạc hà crack crack",
+      "description": "Struck by football, initial encounter",
+      "category": "Say Cheese Say Cheese THƠM BÉO",
+      "price": 30000,
+      "stock": 43,
+      "images": [
+        {
+          "url": "../images/products/stbhcc.jpg",
+          "alt": "Sua tuoi bac ha crack crack"
+        }
+      ],
+      "likes": 81,
+      "tags": [
+        "Bán chạy",
+        "Đặc trưng"
+      ],
+      "created_at": "14/12/2024"
+    },
+    {
+      "id": 38,
+      "name": "Cacao dẻo dầm",
+      "description": "Sequelae of central nervous system tuberculosis",
+      "category": "Say Cheese CÓ GU",
+      "price": 29000,
+      "stock": 62,
+      "images": [
+        {
+          "url": "../images/products/cacaodeo.jpg",
+          "alt": "Cacao deo dam"
+        }
+      ],
+      "likes": 23,
+      "tags": [
+        ""
+      ],
+      "created_at": "12/09/2024"
+    },
+    {
+      "id": 39,
+      "name": "Phê sữa",
+      "description": "Nondisp suprcndl fx w intrcndl extn low end r femr, 7thM",
+      "category": "Say Cheese CÓ GU",
+      "price": 21000,
+      "stock": 80,
+      "images": [
+        {
+          "url": "../images/products/phesua.jpg",
+          "alt": "Phe sua"
+        }
+      ],
+      "likes": 39,
+      "tags": [
+        ""
+      ],
+      "created_at": "18/07/2024"
+    },
+    {
+      "id": 40,
+      "name": "Phê đá",
+      "description": "Vitamin A deficiency with corneal ulceration and xerosis",
+      "category": "Say Cheese CÓ GU",
+      "price": 19000,
+      "stock": 49,
+      "images": [
+        {
+          "url": "../images/products/pheda.jpg",
+          "alt": "Phe da"
+        }
+      ],
+      "likes": 91,
+      "tags": [
+        ""
+      ],
+      "created_at": "05/03/2024"
+    },
+    {
+      "id": 41,
+      "name": "Bạc xỉu",
+      "description": "21 weeks gestation of pregnancy",
+      "category": "Say Cheese CÓ GU",
+      "price": 27000,
+      "stock": 73,
+      "images": [
+        {
+          "url": "../images/products/bacxiu.jpg",
+          "alt": "Bac xiu"
+        }
+      ],
+      "likes": 1,
+      "tags": [
+        "Bán chạy"
+      ],
+      "created_at": "10/07/2024"
+    },
+    {
+      "id": 42,
+      "name": "Cafe muối kem cheese",
+      "description": "Contus/lac right cerebrum w LOC >24 hr w ret consc lev",
+      "category": "Say Cheese CÓ GU",
+      "price": 29000,
+      "stock": 99,
+      "images": [
+        {
+          "url": "../images/products/cafemuoi.jpg",
+          "alt": "Cafe muoi kem cheese"
+        }
+      ],
+      "likes": 38,
+      "tags": [
+        ""
+      ],
+      "created_at": "16/11/2024"
+    },
+    {
+      "id": 43,
+      "name": "Cacao dầm kem trứng",
+      "description": "Burn of 2nd deg mul left fingers (nail), inc thumb, sequela",
+      "category": "Say Cheese CÓ GU",
+      "price": 39000,
+      "stock": 25,
+      "images": [
+        {
+          "url": "../images/products/cacaokt.jpg",
+          "alt": "Cacao dam kem trung"
+        }
+      ],
+      "likes": 23,
+      "tags": [
+        "Bán chạy",
+        "Đặc trưng"
+      ],
+      "created_at": "22/08/2024"
+    },
+    {
+      "id": 44,
+      "name": "Trà táo thái xanh",
+      "description": "Ped w convey inj in clsn w nonmtr vehicle in traf, sequela",
+      "category": "Say Cheese THANH MÁT",
+      "price": 25000,
+      "stock": 30,
+      "images": [
+        {
+          "url": "../images/products/tratao.jpg",
+          "alt": "Tra tao thai xanh"
+        }
+      ],
+      "likes": 88,
+      "tags": [
+        "Bán chạy",
+        "Đặc trưng"
+      ],
+      "created_at": "27/04/2024"
+    },
+    {
+      "id": 45,
+      "name": "Hồng trà trân châu đường đen",
+      "description": "Long term (current) use of hormonal contraceptives",
+      "category": "Say Cheese THANH MÁT",
+      "price": 23000,
+      "stock": 25,
+      "images": [
+        {
+          "url": "../images/products/httcdd.jpg",
+          "alt": "Hong tra tran chau duong den"
+        }
+      ],
+      "likes": 12,
+      "tags": [
+        "Bán chạy",
+        "Đặc trưng"
+      ],
+      "created_at": "08/12/2024"
+    },
+    {
+      "id": 46,
+      "name": "Hồng trà tắc",
+      "description": "Other contact with shark",
+      "category": "Say Cheese THANH MÁT",
+      "price": 20000,
+      "stock": 61,
+      "images": [
+        {
+          "url": "../images/products/tratac.jpg",
+          "alt": "Hong tra tac"
+        }
+      ],
+      "likes": 25,
+      "tags": [
+        ""
+      ],
+      "created_at": "10/07/2024"
+    },
+    {
+      "id": 47,
+      "name": "Trà vải",
+      "description": "Injury of inferior vena cava",
+      "category": "Say Cheese THANH MÁT",
+      "price": 33000,
+      "stock": 50,
+      "images": [
+        {
+          "url": "../images/products/travai.jpg",
+          "alt": "Tra vai"
+        }
+      ],
+      "likes": 24,
+      "tags": [
+        ""
+      ],
+      "created_at": "05/08/2024"
+    },
+    {
+      "id": 48,
+      "name": "Trà đào",
+      "description": "Osteonecrosis due to drugs, unspecified tibia",
+      "category": "Say Cheese THANH MÁT",
+      "price": 33000,
+      "stock": 23,
+      "images": [
+        {
+          "url": "../images/products/tradao.jpg",
+          "alt": "Tra dao"
+        }
+      ],
+      "likes": 26,
+      "tags": [
+        ""
+      ],
+      "created_at": "23/07/2024"
+    },
+    {
+      "id": 49,
+      "name": "Hồng trà bí đao long nhãn",
+      "description": "Drowning and submersion, undetermined intent",
+      "category": "Say Cheese THANH MÁT",
+      "price": 28000,
+      "stock": 96,
+      "images": [
+        {
+          "url": "../images/products/bidao.png",
+          "alt": "Hong tra bi dao long nhan"
+        }
+      ],
+      "likes": 5,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "09/09/2024"
+    },
+    {
+      "id": 50,
+      "name": "Trà me thái đỏ",
+      "description": "Displ oblique fx shaft of l tibia, 7thH",
+      "category": "Say Cheese THANH MÁT",
+      "price": 25000,
+      "stock": 30,
+      "images": [
+        {
+          "url": "../images/products/trame.jpg",
+          "alt": "Tra me thai do"
+        }
+      ],
+      "likes": 13,
+      "tags": [
+        "Đặc trưng"
+      ],
+      "created_at": "17/03/2024"
+    }
+  ],
+  "category": [
+    {
+      "id": 0,
+      "name": "Say Cheese CÓ GU"
+    },
+    {
+      "id": 1,
+      "name": "Say Cheese ĐẬM VỊ"
+    },
+    {
+      "id": 2,
+      "name": "Say Cheese THANH MÁT"
+    },
+    {
+      "id": 3,
+      "name": "Say Cheese THƠM BÉO"
+    },
+    {
+      "id": 4,
+      "name": "Bánh Trứng Gà Non HongKong"
+    }
+  ],
+  "user": [
+    {
+      "id": "0",
+      "customer_name": "Thùy Anh",
+      "address": "142/48 Nguyễn Văn Linh, phường Bình Thuận, quận 7, tpHCM",
+      "email": "thuyanh123@gmail.com",
+      "phone": "0379427326",
+      "password": "blahblahblahblahblahblahblahblahblah",
+      "avatar": "https://i.pinimg.com/originals/d5/c8/6c/d5c86cf0319b4ed35adaa455d18f5c58.jpg",
+      "status": "Hoạt động"
+    },
+    {
+      "id": "1",
+      "customer_name": "Đông Nghi",
+      "address": "300/34 Nguyễn Văn Linh, phường Bình Thuận, quận 7, tpHCM",
+      "email": "dongnghi123@gmail.com",
+      "phone": "0147896325",
+      "password": "blahblahblahblahblahblahblahblahblah",
+      "avatar": "https://i.pinimg.com/originals/d5/c8/6c/d5c86cf0319b4ed35adaa455d18f5c58.jpg",
+      "status": "Hoạt động"
+    },
+    {
+      "id": "2",
+      "customer_name": "Thiên Ân",
+      "address": "64/12 Lâm Văn Bền, phường Tân Kiểng, quận 7, tpHCM",
+      "email": "thienan@gmail.com",
+      "phone": "0858148665",
+      "password": "blahblahblahblahblahblahblahblahblah",
+      "avatar": "https://i.pinimg.com/originals/d5/c8/6c/d5c86cf0319b4ed35adaa455d18f5c58.jpg",
+      "status": "Hoạt động"
+    }
+  ],
+  "cart": [
+    {
+      "id": "6",
+      "name": "Sữa tươi cà phê bạc hà",
+      "cate_id": "Say Cheese THƠM BÉO",
+      "price": 35000,
+      "img": "../images/products/mint-milk-coffee.jpg",
+      "details": "Một chiếc bánh trứng gà non thơm lừng trứng sữa không chỉ thích hợp để bắt đầu một ngày mới đầy năng lượng, mà còn thích hợp cho buổi xế vội, hoặc buổi tối nhâm nhi bánh trà ngon miệng để học bài, làm việc",
+      "quantity": 20
+    },
+    {
+      "id": "4",
+      "name": "Cacao dầm kem trứng",
+      "cate_id": "Say Cheese CÓ GU",
+      "price": 39000,
+      "img": "../images/products/cacao-eggcream.jpg",
+      "details": "Một chiếc bánh trứng gà non thơm lừng trứng sữa không chỉ thích hợp để bắt đầu một ngày mới đầy năng lượng, mà còn thích hợp cho buổi xế vội, hoặc buổi tối nhâm nhi bánh trà ngon miệng để học bài, làm việc",
+      "quantity": 20
+    }
+  ]
+}

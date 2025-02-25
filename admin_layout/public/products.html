@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Say Cheese - Admin</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../IMG/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap icons library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/home.css" />
+    <!-- Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html"
+        ><img width="100" src="../IMG/logo.jpg" alt="logo"
+      /></a>
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./categories.html">Categories</a></li>
+        <li><a href="./users.html">Users</a></li>
+        <li><a href="./orders.html">Orders</a></li>
+      </ul>
+      <button class="btn2">Log out</button>
+      <!-- <div>
+          <a href="index.php?page=login">
+            <button id="logInBtn">Log in</button>
+          </a>
+          <a href="index.php?page=signin">
+            <button id="signUpBtn">Sign up</button>
+          </a>
+        </div> -->
+    </nav>
+    <main id="products-main" class="container">
+      <!-- HEADER -->
+      <header class="revenue p-20 mb-20">
+        <h1>PRODUCTS</h1>
+        <div class="cols-2">
+            <a href="./add-product.html" class="add-btn">+ Add Product</a>
+          <input
+            class="search-bar w-40"
+            type="text"
+            placeholder="Search Brand"
+          />
+        </div>
+      </header>
+      <div class="display-flex">
+        <aside class="static right-col">
+          <div class="display-flex">
+            <h3>Filters</h3>
+          </div>
+          <div class="aside-filter">
+            <h3>Categories</h3>
+            <ul>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Bánh trứng gà non HongKong
+              </li>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Say Cheese ĐẬM VỊ
+              </li>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Say Cheese CÓ GU
+              </li>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Say Cheese THƠM BÉO
+              </li>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Say Cheese THANH MÁT
+              </li>
+            </ul>
+          </div>
+          <div class="aside-filter">
+            <h3>Tagged products</h3>
+            <ul>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Hot
+              </li>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Signature
+              </li>
+              <li>
+                <input type="checkbox" name="sedan" id="" />
+                Best Seller
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <section class="static left-col">
+          <table id="product-table">
+            <thead class="">
+              <tr>
+                <th>
+                  ID
+                  <div class="sort-btn">
+                    <a><i class="bi bi-chevron-compact-up"></i></a>
+                    <a><i class="bi bi-chevron-compact-down"></i></a>
+                  </div>
+                </th>
+                <th>
+                  Product name
+                  <div class="sort-btn">
+                    <a><i class="bi bi-chevron-compact-up"></i></a
+                    ><a><i class="bi bi-chevron-compact-down"></i></a>
+                  </div>
+                </th>
+                <th>
+                  Quantity
+                  <div class="sort-btn">
+                    <a><i class="bi bi-chevron-compact-up"></i></a
+                    ><a><i class="bi bi-chevron-compact-down"></i></a>
+                  </div>
+                </th>
+                <th>
+                  Price (vnd)
+                  <div class="sort-btn">
+                    <a><i class="bi bi-chevron-compact-up"></i></a
+                    ><a><i class="bi bi-chevron-compact-down"></i></a>
+                  </div>
+                </th>
+                <th>
+                  Orders
+                  <div class="sort-btn">
+                    <a><i class="bi bi-chevron-compact-up"></i></a
+                    ><a><i class="bi bi-chevron-compact-down"></i></a>
+                  </div>
+                </th>
+                <th>
+                  Views
+                  <div class="sort-btn">
+                    <a><i class="bi bi-chevron-compact-up"></i></a
+                    ><a><i class="bi bi-chevron-compact-down"></i></a>
+                  </div>
+                </th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="alllist">
+              <!-- <tr>
+                <td>id</td>
+                <td class="display-flex">
+                  <img src="" alt="" style="width: 50px" />
+                  <div>
+                    <a>name</a>
+                    <span>category</span>
+                  </div>
+                </td>
+                <td style="color: var(--brand-color)">stock</td>
+                <td>price</td>
+                <td style="color: var(--brand-color)">4</td>
+                <td><span>view</span></td>
+                <td>
+                  <a href="">Edit</a>
+                  <a href="">Disable</a>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+          <div class="table-footer">
+            <span id="product-count"></span>
+            <div class="pagination" id="product-pagination">
+              <a href="#" id="begin-btn" class="disabled"
+                ><i class="bi bi-chevron-double-left"></i
+              ></a>
+              <a href="#" id="previous-btn" class="disabled"
+                ><i class="bi bi-chevron-left"></i
+              ></a>
+              <a href="#" id="next-btn"><i class="bi bi-chevron-right"></i></a>
+              <a href="#" id="end-btn"
+                ><i class="bi bi-chevron-double-right"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- <script src="../app.js"></script> -->
+    <script src="./index.js"></script>
+  </body>
+</html>

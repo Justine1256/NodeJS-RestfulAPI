@@ -1,0 +1,597 @@
+:root {
+  --brand-color: #e7b10a;
+  --background-color: #4c4b16;
+  --primary-color: #f7f1e5;
+  --secondary-color: #e7b10a;
+  --text-color: #4c4b16;
+  --customed-black: #white;
+}
+/* Font family */
+@font-face {
+  font-family: comfortaa;
+  src: url("../font/Comfortaa-VariableFont_wght.ttf");
+}
+
+/* Default styles */
+input::placeholder {
+  color: var(--primary-color);
+}
+.p-20 {
+  padding: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.w-60 {
+  width: 59% !important;
+}
+.w-40 {
+  width: 40% !important;
+}
+.w-100 {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--text-color);
+  /* background-color: #fff; */
+  font-size: 16px;
+  font-family: comfortaa, sans-serif;
+  margin: 0;
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+a {
+  color: var(--brand-color);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.disabled {
+  color: #cacaca;
+  & :hover {
+    border: none !important;
+  }
+}
+.active {
+  color: var(--brand-color);
+}
+button,
+input[type="submit"] {
+  background-color: var(--brand-color);
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fafafa;
+  font-family: "Saira", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  /* height: fit-content; */
+  &:hover {
+    border: 1px solid white;
+  }
+}
+.btn2 {
+  background-color: #00000000;
+  border: 1px solid white;
+}
+ul {
+  list-style: none;
+}
+.bg-black {
+  background-color: var(--background-color);
+}
+.display-flex {
+  display: flex;
+  gap: 50px;
+}
+.sort {
+  width: 150px;
+}
+.static {
+  border: 1px solid #ddd;
+  margin: 0 0 30px;
+  height: fit-content;
+  & .display-flex:first-child {
+    padding: 0 20px;
+    background-color: var(--text-color);
+  }
+  & h2,
+  h3 {
+    color: var(--primary-color);
+  }
+}
+.pd-20 {
+  padding: 0 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--background-color);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  justify-content: space-between;
+  & > a > img {
+    width: 50px;
+    border-radius: 100%;
+  }
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  & li {
+    margin-right: 20px;
+  }
+}
+nav ul a,
+nav button {
+  padding: 3px 21px;
+  color: #fafafa;
+  font-family: "Saira", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+nav #logInBtn {
+  border: 1px solid white;
+  background-color: var(--background-color);
+}
+nav #signUpBtn {
+  background-color: white;
+  color: black;
+}
+nav .active {
+  background-color: var(--background-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-color);
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer form {
+  display: grid;
+  gap: 10px;
+  width: 20%;
+}
+footer input {
+  background-color: var(--background-color);
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+footer input[name="message"] {
+  height: 80px;
+}
+section {
+  margin: 0 50px;
+}
+
+/* ADD PRODUCT PAGE */
+.left-col {
+  width: 60%;
+  & button {
+    float: right;
+  }
+}
+.right-col {
+  width: 40%;
+  margin: 0 0 30px;
+  height: fit-content;
+}
+.best {
+  padding: 10px 50px 50px;
+  background-color: var(--background-color);
+  margin: 30px auto 30px;
+  color: var(--primary-color);
+}
+.revenue {
+  background-color: transparent;
+  border: 1px solid var(--background-color);
+  & h3 {
+    color: var(--text-color);
+  }
+}
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  color: var(--primary-color);
+  padding-left: 20px;
+  border: 1px solid white;
+  & ::placeholder {
+    color: white;
+  }
+}
+.row2 {
+  margin-bottom: 23px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 30px;
+}
+.group2 > input {
+  width: 677px;
+  height: 150px;
+  background-color: #fdfdfd7d;
+  font-size: 14px;
+  color: #b7b7b7;
+  padding-left: 20px;
+  border: none;
+}
+input[type="file"] {
+  border: 1px dashed white;
+  width: 100%;
+}
+.cols-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  & div {
+    width: 50%;
+  }
+}
+
+/* BRANDS PAGE */
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* background-color: #2c2c2c; */
+  margin-top: 10px;
+  overflow: hidden;
+}
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+}
+th {
+  font-weight: 500;
+  min-width: 100px;
+}
+tr:hover td {
+  background-color: #f8f3e747;
+}
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  & span {
+    color: var(--text-color);
+  }
+  & a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: 1px solid #ddd;
+    &:hover {
+      /* background-color: #292929; */
+      border: 1px solid;
+    }
+  }
+  & .active {
+    border-color: var(--brand-color);
+    background-color: var(--brand-color);
+    color: #fff;
+  }
+}
+/* Search bar */
+.search-bar {
+  border: 1px solid var(--primary-color) !important;
+  background-color: #ffffff80;
+  color: var(--primary-color) !important;
+  /* width: 200px !important; */
+  & ::placeholder {
+    color: var(--primary-color) !important;
+  }
+}
+
+/* CUSTOMER PAGE */
+.filter {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  & input[type="submit"] {
+    width: fit-content;
+  }
+  & select,
+  input {
+    width: 20%;
+    border: 1px solid #444;
+  }
+  & button {
+    width: fit-content;
+  }
+  /* & .search-bar:first-child {
+    width: 0%;
+  } */
+}
+
+/* PRODUCTS PAGE */
+.add-btn {
+  background-color: var(--brand-color);
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 600;
+  & :hover {
+    text-decoration: none;
+  }
+}
+aside {
+  width: 30% !important;
+}
+li {
+  line-height: 25px;
+}
+#products-main {
+  & header {
+    background-color: var(--background-color) !important;
+    color: var(--primary-color);
+  }
+  & h3 {
+    margin: 15px 0;
+  }
+  & thead {
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--text-color);
+  }
+  & button:first-child {
+    height: 40px;
+    width: 20%;
+  }
+  & .left-col {
+    width: 80%;
+  }
+  & .display-flex {
+    gap: 20px;
+  }
+  & th {
+  color: var(--primary-color);
+  }
+  & tr .display-flex {
+    gap: 10px;
+    & p {
+      margin: 0;
+    }
+    & span {
+      font-size: 14px;
+      color: #979696;
+    }
+    & td {
+      height: 76px;
+    }
+    & img {
+      width: 50px;
+      height: 50px;
+      align-self: center;
+    }
+    & h3 {
+      width: min-content;
+    }
+  }
+  & .best {
+    padding: 0 20px;
+    margin: 0;
+  }
+  & table,
+  h1,
+  ul {
+    margin-top: 0;
+    padding: 0;
+  }
+  & tr {
+    height: 50px;
+    & th:first-child {
+      min-width: 60px;
+    }
+    & a:hover {
+      color: var(--brand-color);
+    }
+    & td {
+      text-align: center;
+    }
+  }
+  & .table-footer {
+    padding: 20px 12px;
+    align-items: center;
+    margin: 0;
+  }
+}
+#alllist {
+  & button {
+    background-color: transparent;
+    color: var(--secondary-color);
+    width: unset !important;
+    text-transform: none;
+    padding: 0;
+    height: unset !important;
+    font-weight: unset;
+    float: unset;
+    & :hover {
+      cursor: pointer;
+      border: none;
+    }
+  }
+}
+.aside-filter {
+  color: var(--text-color) !important;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  & h3 {
+    color: var(--text-color);
+  }
+}
+.sort-btn {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  float: right;
+
+  & a {
+    background-color: #00000000;
+    width: min-content;
+    line-height: 4px;
+    & i {
+      font-size: 8px;
+    }
+  }
+}
+
+/* ADMIN INDEX PAGE */
+#admin-index {
+  flex-wrap: wrap;
+  display: flex;
+  & option {
+    background-color: var(--background-color);
+    border-radius: 0;
+  }
+  & th {
+    font-weight: bold;
+  }
+  & td {
+    text-align: right;
+  }
+  & .display-flex {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+  & select {
+    width: 50%;
+    padding-left: 5px;
+  }
+  & td .display-flex {
+    width: fit-content;
+    gap: 10px !important;
+  }
+  & .best {
+    margin: 0 0 30px;
+  }
+  & .table-footer {
+    margin: 0;
+    padding: 20px;
+  }
+  & svg {
+    width: 20px;
+    margin-bottom: -5px;
+    margin-right: 10px;
+    fill: var(--text-color);
+  }
+  & table p,
+  a {
+    font-weight: 700;
+    margin: 0;
+    /* color: white; */
+    font-size: 14px;
+  }
+  & span {
+    font-size: 12px;
+  }
+  & #greetings {
+    color: var(--text-color);
+  }
+  & td:first-child {
+    text-align: left;
+    & a {
+      line-height: 20px;
+    }
+  }
+  & #order-table td {
+    text-align: left !important;
+  }
+}
+.overall-report {
+  gap: 50px !important;
+  & .best {
+    width: 33.33333%;
+    margin: 30px auto !important;
+    padding: 20px;
+  }
+  & .percentage {
+    color: #34c759;
+  }
+  & i {
+    font-size: 25px;
+    color: var(--brand-color);
+    border-radius: 50%;
+    padding: 0 12px;
+  }
+  & h4 {
+    margin: 0;
+  }
+  & .display-flex {
+    align-items: end !important;
+  }
+  & a {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+  }
+}
+.revemue-btns button {
+  margin-left: 20px;
+}
+.product-table {
+  & tr .display-flex div {
+    display: grid;
+    height: 76px;
+    align-content: center;
+  }
+}
+.row-thumbnail {
+  display: flex;
+  gap: 10px;
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+  }
+}
+
+/* ADMIN ADD PRODUCTS PAGE */
+#add-product {
+  & .best {
+    background-color: transparent !important;
+    border: 1px solid var(--background-color);
+    color: var(--text-color);
+  }
+  & input, select {
+    border-color: var(--background-color);
+    color: var(--text-color);
+  }
+  & input::placeholder {
+    color: var(--text-color);
+  }
+  & #box-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,104 @@
+.m-0 {
+  margin: 0;
+}
+.product-details {
+  display: flex;
+  max-width: 75%;
+  margin: 70px auto;
+  justify-content: space-between;
+}
+iframe img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+.product-details > div > img {
+  object-fit: cover;
+}
+.detail-img {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px 0 50px;
+  justify-content: space-between;
+}
+.details h1 {
+  margin: 0;
+}
+.price {
+  color: var(--secondary-color);
+  font-size: 25px;
+  font-weight: 600;
+  margin: 12px 0 14px;
+}
+button {
+  border: none;
+  background: var(--secondary-color);
+  padding: 15px;
+  border-radius: 3px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 20px;
+  text-transform: capitalize;
+  min-width: 200px;
+  &:hover {
+    background-color: var(--text-color);
+  }
+}
+.prod-social {
+  display: flex;
+}
+.prod-social a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+#facebook {
+  background-color: #3b5999;
+}
+#twitter {
+  background-color: #1da1f2;
+}
+#pinterest {
+  background-color: #cb2028;
+}
+#instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+}
+#google-plus {
+  background-color: #fe6d4c;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 70px auto 0;
+}
+.description img{
+  width: 49%;
+  height: auto;
+}
+legend {
+  font-size: 25px;
+}
+
+
+.best-sellers {
+  max-width: 1170px;
+  margin: 70px auto 0;
+}

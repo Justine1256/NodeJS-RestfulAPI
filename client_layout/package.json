@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-loader": "^0.5.7",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.1",
+    "axios": "^1.7.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "keywords": [],
+  "description": ""
+}

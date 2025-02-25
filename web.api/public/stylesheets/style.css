@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  & strong {
+    color: #00B7FF;
+  }
+  color: black;
+  text-decoration: none;
+}
+li {
+  margin-bottom: 10px;
+}
+button {
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid;
+  width: 100px;
+  margin-top: 20px;
+}
+

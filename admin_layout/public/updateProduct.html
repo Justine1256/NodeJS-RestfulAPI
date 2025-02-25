@@ -1,0 +1,14 @@
+
+<body>
+    <form action="index.php?page=products&lenh=capnhat&id=<?php echo $mautin[0]['id'];?>" method="post" enctype="multipart/form-data">
+        <label for="">Product name</label>
+        <input type="text" name="name" id="" value="<?php echo $mautin[0]['name']; ?>"><br>
+        <label for="">Price</label>
+        <input type="text" name="price" id="" value="<?php echo $mautin[0]['price']; ?>"><br>
+        <label for="">Quantity</label>
+        <input type="text" name="quantity" id="" value="<?php echo $mautin[0]['quantity']; ?>"><br>
+        <label for="">Chọn danh mục</label>
+        <input type="text" name="id_brand" id="" value="<?php echo $mautin[0]['id_brand']; ?>"><br><br>
+        <input type="submit" value="Cập nhật">
+    </form>
+</body>

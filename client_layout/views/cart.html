@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Say Cheese</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../IMG/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- CUTE CAT -->
+    <img id="dance-cat2" src="../IMG/dance-cat.gif" width="200" height="200" />
+    <img id="dance-cat" src="../IMG/dance-cat2.gif" width="200" height="200" />
+
+    <!-- HEADER -->
+    <header>
+      <a href="index.html">
+        <h1>SayCheese</h1>
+      </a>
+      <div class="sign-in-options">
+        <a href="cart.html">
+          <img width="25" src="../IMG/grocery-store.png" alt="cart" />
+          <span id="cart-count">
+          </span>
+        </a>
+      </div>
+      <!-- <div class="sign-in-options">
+        <a href="login.html">LOGIN</a>/
+        <a href="register.html">REGISTER</a>
+      </div> -->
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Trang chủ</a>
+          <ul>
+            <li><a href="#danh-muc">Danh mục</a></li>
+            <li><a href="#ua-chuong">Món ưa chuộng</a></li>
+            <li><a href="#xem-nhieu">Món xem nhiều nhất</a></li>
+            <li><a href="#ban-chay">Món bán chạy</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#dac-sac">Món đặc sắc</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Giới thiệu</a></li>
+        <li>
+          <a href="shop.html">Cửa hàng</a>
+          <ul class="menu-cate"></ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- BANNER IMAGE -->
+    <div class="banner">
+      <div class="banner-container">
+        <h1>Giỏ hàng</h1>
+      </div>
+    </div>
+
+    <!-- ADDED PRODUCTS -->
+    <table>
+      <thead>
+        <tr>
+          <th>Xóa</th>
+          <th>Hình ảnh</th>
+          <th>Món ăn</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Tổng</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- <tr>
+          <td class="product-remove">
+            <a href="#">
+              <img src="IMG/trash-can.png" alt="" />
+            </a>
+          </td>
+          <td class="product-thumb">
+            <a href="product-details.html">
+              <img src="IMG/pmxxcb.jpg" alt="Bánh trứng gà non" />
+            </a>
+          </td>
+          <td class="product-name">
+            <a href="product-details.html"> Bánh trứng gà non </a>
+          </td>
+          <td class="product-price">36.000₫</td>
+          <td class="product-quantity">
+            <input
+              type="number"
+              name="quantity"
+              id="quantity"
+              value="1"
+              min="1"
+              max="100"
+              onchange="updateProductTotal()"
+            />
+          </td>
+          <td class="product-total">36.000₫</td>
+        </tr> -->
+      </tbody>
+    </table>
+
+    <!-- COUPON AREA -->
+    <div class="coupon-wrapper">
+      <div class="coupon">
+        <h3>COUPON</h3>
+        <div class="coupon-inner">
+          <p>Nếu bạn có mã khuyến mãi, vui lòng nhập tại đây</p>
+          <div>
+            <input type="text" name="" id="" placeholder="Mã khuyến mãi" />
+            <button>Áp dụng</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-total">
+        <h3>Tổng tiền giỏ hàng</h3>
+        <div class="coupon-inner">
+          <div class="cart-subtotal">
+            <p>Tổng phụ</p>
+            <p class="cart-amount">36.000₫</p>
+          </div>
+          <div class="cart-subtotal">
+            <p>Phí giao hàng</p>
+            <p class="cart-amount">20.000₫</p>
+          </div>
+          <div class="cart-subtotal">
+            <p>Tổng cộng</p>
+            <p class="cart-amount">56.000₫</p>
+          </div>
+          <div class="checkout">
+            <a href="#">Thanh toán</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="left-footer">
+        <h1>Say Cheese</h1>
+        <h4>Ăn bánh uống trà</h4>
+        <p>
+          Địa chỉ: 017 chung cư Phan Văn Trị, đường Lê Hồng Phong, phường 2,
+          quận 5, tpHCM
+        </p>
+        <p>Số Điện Thoại: 0379427326</p>
+        <p>Email: huynhphamthuyanh.126@gmail.com</p>
+      </div>
+      <img class="footer-logo" src="../IMG/logo.jpg" alt="" />
+    </footer>
+
+    <script type="module" src="../app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Say Cheese</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../style/home.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Font Comfortaa -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <!-- CUTE CAT -->
+    <img
+      id="dance-cat2"
+      src="../images/dance-cat.gif"
+      width="200"
+      height="200"
+    />
+    <img
+      id="dance-cat"
+      src="../images/dance-cat2.gif"
+      width="200"
+      height="200"
+    />
+
+    <!-- HEADER -->
+    <header>
+      <a href="index.html">
+        <h1>SayCheese</h1>
+      </a>
+      <div class="sign-in-options">
+        <a href="cart.html">
+          <img width="25" src="../images/grocery-store.png" alt="cart" />
+          <span id="cart-count"></span>
+        </a>
+      </div>
+      <!-- <div class="sign-in-options">
+        <a href="login.html">LOGIN</a>/
+        <a href="register.html">REGISTER</a>
+      </div> -->
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Trang chủ</a>
+          <ul>
+            <li><a href="#danh-muc">Danh mục</a></li>
+            <li><a href="#ua-chuong">Món ưa chuộng</a></li>
+            <li><a href="#xem-nhieu">Món xem nhiều nhất</a></li>
+            <li><a href="#ban-chay">Món bán chạy</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#dac-sac">Món đặc sắc</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Giới thiệu</a></li>
+        <li>
+          <a href="shop.html">Cửa hàng</a>
+          <ul id="menu-cate"></ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- BANNER IMAGE -->
+    <div class="banner">
+      <div class="banner-container">
+        <h1>Ăn bánh uống trà</h1>
+        <h2>Bánh trứng gà non</h2>
+        <p>
+          với công thức nguyên bản từ Hồng Kông mang đến chiếc bánh thơm lừng
+          trứng sữa
+        </p>
+        <a class="SMN_effect-37" href="blog.html">Xem thêm</a>
+      </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="categories" id="danh-muc">
+      <div class="categories-child" id="milk-tea">
+        <div class="overlay">
+          <h4>Say Cheese ĐẬM VỊ</h4>
+          <a class="SMN_effect-37" href="">Mua ngay</a>
+        </div>
+      </div>
+      <div class="categories-child" id="egg-waffle">
+        <div class="overlay">
+          <h4>
+            Bánh trứng gà non <br />
+            HongKong
+          </h4>
+          <a class="SMN_effect-37" href="">Mua ngay</a>
+        </div>
+      </div>
+      <div class="categories-child double-img">
+        <div id="mint-coffee">
+          <div class="overlay">
+            <h4>Say Cheese CÓ GU</h4>
+            <a class="SMN_effect-37" href="">Mua ngay</a>
+          </div>
+        </div>
+        <div id="combo">
+          <div class="overlay">
+            <h4>
+              Ăn bánh <br />
+              uống trà
+            </h4>
+            <a class="SMN_effect-37" href="">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW PRODUCTS -->
+    <div class="five-prod-list" id="ua-chuong">
+      <div class="title">
+        <p>Mời bạn thưởng thức</p>
+        <h2>Bánh mới nóng hổi cùng trà sữa mát lạnh!</h2>
+      </div>
+      <div id="newlist" class="product-list"></div>
+
+      <div class="three-col">
+        <fieldset id="tra_thom">
+          <legend>Trà thơm</legend>
+          <!-- <div class="best-prod">
+            <div class="product">
+              <div class="overflow-hidden">
+                <img src="../images/products/tratao.jpg" alt="" />
+                <img class="tag" src="../images/hot.png" alt="" />
+              </div>
+              <div class="bst-prod-content">
+                <a href="">Trà thái táo xanh</a>
+                <a class="category-link" href="">Say Cheese THANH MÁT</a>
+                <p>28.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="best-prod">
+            <div class="product">
+              <div class="overflow-hidden">
+                <img src="../images/products/tratao.jpg" alt="" />
+                <img class="tag" src="../images/hot.png" alt="" />
+              </div>
+              <div class="bst-prod-content">
+                <a href="">Trà thái táo xanh</a>
+                <a class="category-link" href="">Say Cheese THANH MÁT</a>
+                <p>28.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="best-prod">
+            <div class="product">
+              <div class="overflow-hidden">
+                <img src="../images/products/tratao.jpg" alt="" />
+                <img class="tag" src="../images/hot.png" alt="" />
+              </div>
+              <div class="bst-prod-content">
+                <a href="">Trà thái táo xanh</a>
+                <a class="category-link" href="">Say Cheese THANH MÁT</a>
+                <p>28.000đ</p>
+              </div>
+            </div>
+          </div> -->
+        </fieldset>
+        <fieldset id="banh_trung">
+          <legend>Bánh trứng gà non</legend>
+          <!-- <div class="best-prod">
+            <div class="product">
+              <div class="overflow-hidden">
+                <img src="../images/products/nv.jpg" alt="" />
+              </div>
+              <div class="bst-prod-content">
+                <a href="">Nguyên vị</a>
+                <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+                <p>20.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="best-prod">
+            <div class="product">
+              <div class="overflow-hidden">
+                <img src="../images/products/nv.jpg" alt="" />
+              </div>
+              <div class="bst-prod-content">
+                <a href="">Nguyên vị</a>
+                <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+                <p>20.000đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="best-prod">
+            <div class="product">
+              <div class="overflow-hidden">
+                <img src="../images/products/nv.jpg" alt="" />
+              </div>
+              <div class="bst-prod-content">
+                <a href="">Nguyên vị</a>
+                <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+                <p>20.000đ</p>
+              </div>
+            </div>
+          </div> -->
+        </fieldset>
+        <fieldset id="sua-beo">
+          <legend>Sữa béo</legend>
+        </fieldset>
+      </div>
+    </div>
+
+    <!-- MOSTVIEW PRODUCTS -->
+    <div class="five-prod-list" id="xem-nhieu">
+      <div class="title">
+        <p>Mời bạn thưởng thức</p>
+        <h2>Sản phẩm được xem nhiều nhất</h2>
+      </div>
+
+      <div id="alllist" class="product-list">
+        <div class="product">
+          <div class="overflow-hidden">
+            <img src="../images/products/stcf.jpg" alt="" />
+          </div>
+          <a href="#">Sữa tươi cà phê</a>
+          <a class="category-link" href="">Say Cheese CÓ GU</a>
+          <p>25.000đ</p>
+        </div>
+        <div class="product">
+          <div class="overflow-hidden">
+            <img src="../images/products/tsgao.jpg" alt="" />
+            <img class="tag" src="../images/hot.png" alt="" />
+          </div>
+          <a href="#">Trà sữa gạo</a>
+          <a class="category-link" href="">Say Cheese ĐẬM VỊ</a>
+          <p>25.000đ</p>
+        </div>
+        <div class="product">
+          <div class="overflow-hidden">
+            <img src="../images/products/stkm.jpg" alt="" />
+          </div>
+
+          <a href="#">Sữa tươi khoai môn</a>
+          <a class="category-link" href="">Say Cheese THƠM BÉO</a>
+          <p>25.000đ</p>
+        </div>
+        <div class="product">
+          <div class="overflow-hidden">
+            <img src="../images/products/x2pmtm.jpg" alt="" />
+            <img class="tag" src="../images/hot.png" alt="" />
+          </div>
+          <a href="#">NV trứng muối double phô mai</a>
+          <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+          <p>40.000đ</p>
+        </div>
+        <div class="product">
+          <div class="overflow-hidden">
+            <img src="../images/products/pmxxcb.jpg" alt="" />
+            <img class="tag" src="../images/hot.png" alt="" />
+          </div>
+          <a href="product-details.html">NV phô mai xúc xích chà bông</a>
+          <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+          <p>36.000đ</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALE BANNER -->
+    <div class="banner sale-banner">
+      <div class="overlay">
+        <div class="banner-container">
+          <h2>Tết ấm no!</h2>
+          <h1>Giảm 20%</h1>
+          <p>các món bánh trứng và trà sữa best sellers</p>
+          <a class="SMN_effect-37" href="blog.html">Xem thêm</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEST SELLERS -->
+    <div class="title" id="ban-chay">
+      <p>Mời bạn thưởng thức</p>
+      <h2>Những món bán chạy nhất</h2>
+    </div>
+    <div class="best-seller">
+      <a href="shop.html">
+        <img src="../images/best-banner.jpg" alt="" />
+      </a>
+      <div class="best-prod-list">
+        <div class="best-prod">
+          <div class="product">
+            <div class="overflow-hidden">
+              <img src="../images/products/cacaokt.jpg" alt="" />
+              <img class="tag" src="../images/hot.png" alt="" />
+            </div>
+            <div class="bst-prod-content">
+              <a href="">Cacao Dầm Kem Trứng</a>
+              <a class="category-link" href="">Say Cheese CÓ GU</a>
+              <p>30.000đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="best-prod">
+          <div class="product">
+            <div class="overflow-hidden">
+              <img src="../images/products/x2pm.jpg" alt="" />
+              <img class="tag" src="../images/hot.png" alt="" />
+            </div>
+            <div class="bst-prod-content">
+              <a href="">NV double phô mai</a>
+              <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+              <p>32.000đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="best-prod">
+          <div class="product">
+            <div class="overflow-hidden">
+              <img src="../images/products/pmxxcb.jpg" alt="" />
+              <img class="tag" src="../images/hot.png" alt="" />
+            </div>
+            <div class="bst-prod-content">
+              <a href="">Phô mai xúc xích chà bông</a>
+              <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+              <p>36.000đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="best-prod">
+          <div class="product">
+            <div class="overflow-hidden">
+              <img src="../images/products/nv.jpg" alt="" />
+            </div>
+            <div class="bst-prod-content">
+              <a href="">Nguyên vị</a>
+              <a class="category-link" href="">Bánh trứng gà non HongKong</a>
+              <p>20.000đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="best-prod">
+          <div class="product">
+            <div class="overflow-hidden">
+              <img src="../images/products/tratac.jpg" alt="" />
+            </div>
+            <div class="bst-prod-content">
+              <a href="">Hồng trà tắc</a>
+              <a class="category-link" href="">Say Cheese THANH MÁT</a>
+              <p>20.000đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="best-prod">
+          <div class="product">
+            <div class="overflow-hidden">
+              <img src="../images/products/tratao.jpg" alt="" />
+              <img class="tag" src="../images/hot.png" alt="" />
+            </div>
+            <div class="bst-prod-content">
+              <a href="">Trà thái táo xanh</a>
+              <a class="category-link" href="">Say Cheese THANH MÁT</a>
+              <p>28.000đ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="left-footer">
+        <h1>Say Cheese</h1>
+        <h4>Ăn bánh uống trà</h4>
+        <p>
+          Địa chỉ: 017 chung cư Phan Văn Trị, đường Lê Hồng Phong, phường 2,
+          quận 5, tpHCM
+        </p>
+        <p>Số Điện Thoại: 0379427326</p>
+        <p>Email: huynhphamthuyanh.126@gmail.com</p>
+      </div>
+      <img class="footer-logo" src="../images/logo.jpg" />
+    </footer>
+
+    <!-- <script>var exports = {};</script> -->
+    <script src="../"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

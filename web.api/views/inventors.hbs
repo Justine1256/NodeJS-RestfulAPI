@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <ul>
+      {{#each inventorsList}}
+        <li>
+          <a href="/inventors/{{id}}"><strong>{{fullname}}</strong>
+            <br />
+            birth:
+            {{year}}
+            <br />
+            passed:
+            {{passed}}</a>
+        </li>
+      {{/each}}
+    </ul>
+    <button><a href="http://localhost:3000/add-inventor">Thêm</a></button>
+  </body>
+</html>
