@@ -195,12 +195,12 @@ section {
   margin: 0 0 30px;
   height: fit-content;
 }
-.best {
+/* .best {
   padding: 10px 50px 50px;
   background-color: var(--background-color);
   margin: 30px auto 30px;
   color: var(--primary-color);
-}
+} */
 .revenue {
   background-color: transparent;
   border: 1px solid var(--background-color);
@@ -240,6 +240,7 @@ select {
   border: none;
 }
 input[type="file"] {
+  height: 300px;
   border: 1px dashed white;
   width: 100%;
 }
@@ -265,7 +266,6 @@ table {
 th,
 td {
   padding: 12px;
-  border-bottom: 1px solid #ddd;
   text-align: left;
   vertical-align: middle;
 }
@@ -273,8 +273,11 @@ th {
   font-weight: 500;
   min-width: 100px;
 }
-tr:hover td {
-  background-color: #f8f3e747;
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  &:hover {
+    background-color: #f8f3e747;
+  }
 }
 .table-footer {
   display: flex;
@@ -294,9 +297,7 @@ tr:hover td {
     }
   }
   & .active {
-    border-color: var(--brand-color);
-    background-color: var(--brand-color);
-    color: #fff;
+    color: var(--brand-color);
   }
 }
 /* Search bar */
@@ -358,11 +359,7 @@ li {
   & h3 {
     margin: 15px 0;
   }
-  & thead {
-    padding: 0 20px;
-    border-bottom: 1px solid #ddd;
-    background-color: var(--text-color);
-  }
+  
   & button:first-child {
     height: 40px;
     width: 20%;
@@ -374,7 +371,7 @@ li {
     gap: 20px;
   }
   & th {
-  color: var(--primary-color);
+    color: var(--primary-color);
   }
   & tr .display-flex {
     gap: 10px;
@@ -435,11 +432,13 @@ li {
     height: unset !important;
     font-weight: unset;
     float: unset;
-    & :hover {
-      cursor: pointer;
-      border: none;
-    }
   }
+}
+.edit-btn:hover,
+.delete-btn:hover {
+  cursor: pointer;
+  border: none !important;
+  text-decoration: underline;
 }
 .aside-filter {
   color: var(--text-color) !important;
@@ -454,7 +453,7 @@ li {
   flex-direction: column;
   width: min-content;
   float: right;
-
+  padding-left: 5px;
   & a {
     background-color: #00000000;
     width: min-content;
@@ -534,6 +533,8 @@ li {
     width: 33.33333%;
     margin: 30px auto !important;
     padding: 20px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
   }
   & .percentage {
     color: #34c759;
@@ -568,6 +569,7 @@ li {
 .row-thumbnail {
   display: flex;
   gap: 10px;
+  width: 350px;
   & div {
     display: flex;
     flex-direction: column;
@@ -575,17 +577,22 @@ li {
     text-align: left;
   }
 }
-
+.background-transparent {
+  background-color: white !important;
+  border: 1px solid var(--background-color);
+  color: var(--text-color);
+}
 /* ADMIN ADD PRODUCTS PAGE */
-#add-product {
-  & .best {
-    background-color: transparent !important;
-    border: 1px solid var(--background-color);
-    color: var(--text-color);
-  }
-  & input, select {
+#add-product,
+.edit-form-container {
+  width: 80%;
+  & input,
+  select {
     border-color: var(--background-color);
     color: var(--text-color);
+  }
+  #editImage {
+    height: 40px;
   }
   & input::placeholder {
     color: var(--text-color);
@@ -594,4 +601,45 @@ li {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.hidden {
+  display: none;
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.btn-cancel {
+  background: #ccc;
+}
+.btn-submit {
+  background: var(--brand-color);
+  color: white;
+}
+
+#category-main, #orders-main {
+  margin: 50px auto;
+  & .search-bar, select {
+    border-color: var(--text-color) !important;
+    color: var(--text-color) !important;
+  }
+  & .search-bar::placeholder {
+    color: var(--text-color);
+  }
+  & table {
+    border: 1px solid #ddd;
+    margin-top: 30px;
+  }
+}
+#category-main, #products-main, #orders-main {
+  & thead {
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+  }
+
 }

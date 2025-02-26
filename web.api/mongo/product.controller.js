@@ -11,6 +11,10 @@ module.exports = {
   updateProdut,
   deleteProduct,
   filterProduct,
+  filterSayCheeseThomBeo,
+  filterBanhTrungGaoNonHongKong,
+  filterSayCheeseThanhMat,
+
   signatureProducts,
   showPageProducts,
   findProduct,deleteFilteredProducts
@@ -67,12 +71,12 @@ async function getDetailProduct(id) {
   const { ObjectId } = mongoose.Types;
 
   if (!ObjectId.isValid(id)) {
+    console.error(`Invalid product ID format: ${id}`);
     throw new Error("Invalid ID format");
   }
 
   try {
-    const result = await productModel.findById(id);
-    return result;
+    console.log(`Fetching product details for ID: ${id}`);
   } catch (error) {
     console.log(error);
     throw new Error("Lỗi lấy dữ liệu sản phẩm");
@@ -82,7 +86,23 @@ async function getDetailProduct(id) {
 /**
  * Lấy danh sách sản phẩm theo danh mục
  */
+async function filterSayCheeseThomBeo() {
+  const categoryId = "679b2a3830a3864da98d9318"; // Replace with actual ID
+  return await filterProduct(categoryId);
+}
+
+async function filterBanhTrungGaoNonHongKong() {
+  const categoryId = "679b2a3830a3864da98d9319"; // Replace with actual ID
+  return await filterProduct(categoryId);
+}
+
+async function filterSayCheeseThanhMat() {
+  const categoryId = "679b2a3830a3864da98d9317"; // Replace with actual ID
+  return await filterProduct(categoryId);
+}
+
 async function filterProduct(id) {
+
   try {
     // Verify category exists
     const selectedCategory = await categoryModel.findById(id);
@@ -105,13 +125,47 @@ async function filterProduct(id) {
 }
 
 /**
- * Lấy danh sách sản phẩm nổi bật
+ * Lấy danh sách sản phẩm tag = "đặc trưng"
  */
 async function signatureProducts() {
   try {
     // Find products by tag "Đặc trưng"
     const filteredProducts = await productModel.find({
       tags: { $in: ["Đặc trưng"] },
+    });
+
+    return filteredProducts;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Error getting products");
+  }
+}
+
+/**
+ * Lấy danh sách sản phẩm tag = "Món mới"
+ */
+async function signatureProducts() {
+  try {
+    // Find products by tag "Món mới"
+    const filteredProducts = await productModel.find({
+      tags: { $in: ["Món mới"] },
+    });
+
+    return filteredProducts;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Error getting products");
+  }
+}
+
+/**
+ * Lấy danh sách sản phẩm tag = "Bán chạy"
+ */
+async function signatureProducts() {
+  try {
+    // Find products by tag "Bán chạy"
+    const filteredProducts = await productModel.find({
+      tags: { $in: ["Bán chạy"] },
     });
 
     return filteredProducts;
@@ -191,15 +245,16 @@ async function addProduct(data) {
     const {
       name,
       description,
-      category,
-      price,
-      quantity,
-      stock,
       images,
-      ratings,
+      category,
+      stock,
+      price,
       tags,
       created_at,
+      likes,
+      ordered,
     } = data;
+
 
     // Verify category exists
     const categoryExists = await categoryModel.findById(category);
@@ -224,13 +279,14 @@ async function addProduct(data) {
       description,
       category,
       price,
-      quantity,
       stock: Number(stock),
       images: formattedImages,
-      ratings,
       tags,
+      likes: likes || 0,
+      ordered: ordered || 0,
       created_at,
     });
+
     // save the document
     const result = await newPro.save();
     return result;
@@ -250,6 +306,8 @@ async function updateProdut(data, id) {
     if (!product) {
       throw new Error(`Product not found: ${id}`);
     }
+    console.log(product);
+
     const { name, description, image, price, quantity, category } = data;
 
     let categoryFind = null;
@@ -273,21 +331,21 @@ async function updateProdut(data, id) {
         stock: Number(data.stock),
         images: [
           {
-            url: data.images[0].url,
+            url: image,
             alt: description || name,
           },
         ],
         ratings: data.ratings,
         tags: data.tags,
-        created_at: data.created_at,
-        category: categoryUpdate,
+        created_at,
+        category,
       },
       { new: true }
     );
     return result;
   } catch (error) {
     console.log(error);
-    throw new Error("Lỗi cập nhật sản phẩm");
+    throw new Error("Lỗi cập nhật sản phẩm: " + error.message);
   }
 }
 

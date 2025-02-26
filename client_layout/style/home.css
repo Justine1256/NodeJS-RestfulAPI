@@ -1167,3 +1167,16 @@ td {
     background-color: var(--text-color);
   }
 }
+/* 3 COL FIELDSET */
+.three-col {
+  display: flex;
+  gap: 24px;
+  & fieldset {
+    width: 33.3333%;
+    text-align: center;
+    padding: 5px 0;
+    & .best-prod {
+      width: 100%;
+    }
+  }
+}

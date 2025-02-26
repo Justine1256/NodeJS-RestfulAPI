@@ -16,8 +16,9 @@ const productsSchema = new Schema({
       alt: { type: String, required: false },
     },
   ],
-  ratings: { type: Number, required: false },
-  tags: { type: Array, required: false }, // "required: true" là dữ liệu bắt buộc phải nhập
+  tags: { type: Array, required: false },
+  likes: { type: Number, required: false }, // "required: true" là dữ liệu bắt buộc phải nhập
+  ordered: { type: Number, required: false }, // "required: true" là dữ liệu bắt buộc phải nhập
   created_at: { type: String, required: false },
 }); //tạo collection mới
 

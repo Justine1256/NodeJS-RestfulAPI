@@ -130,7 +130,7 @@ router.get("/cate/:id", async (req, res) => {
 });
 
 /**
- * Lấy danh sách sản phẩm theo danh mục
+ * Lấy danh sách sản phẩm theo tags
  * // http://localhost:3000/products/dac_trung
  */
 router.get("/tags/dac_trung", async (req, res) => {
@@ -178,7 +178,7 @@ router.get("/page/:currentPage", async (req, res) => {
 });
 
 /**
- * Thêm dữ liệu sản phẩm
+ * Thêm dữ liệu sản phẩm: chọn phương thức post
  * http://localhost:3000/products/addpro
  */
 router.post("/addpro", upload.single("image"), async (req, res) => {
@@ -199,7 +199,7 @@ router.post("/addpro", upload.single("image"), async (req, res) => {
       });
     }
 
-    // Format images data
+    // Format images data: lấy file hình ảnh
     const images = req.file
       ? [
           {
@@ -215,8 +215,8 @@ router.post("/addpro", upload.single("image"), async (req, res) => {
       images,
       price: Number(data.price),
       stock: Number(data.stock),
-      quantity: Number(data.quantity) || 0,
-      ratings: Number(data.ratings) || 0,
+      likes: 0,
+      ordered: 0,
       tags: data.tags ? data.tags.split(",") : [],
     };
 
@@ -237,13 +237,14 @@ router.post("/addpro", upload.single("image"), async (req, res) => {
 });
 
 /**
- * Cập nhật dữ liệu sản phẩm
- * http://localhost:3000/products/updatepro/?
+ * Cập nhật dữ liệu sản phẩm: CHỌN PHƯƠNG THỨC PUT
+ * http://localhost:3000/products/updatepro/ID OBJECT CỦA SẢN PHẨM TỪ DATABASE
  */
 router.put("/updatepro/:id", upload.single("image"), async (req, res) => {
   try {
     const { id } = req.params;
     const data = req.body;
+    
     if (req.file) {
       data.image = req.file.originalname;
     } else {
@@ -261,7 +262,7 @@ router.put("/updatepro/:id", upload.single("image"), async (req, res) => {
 });
 
 /**
- * Xóa dữ liệu
+ * Xóa dữ liệu: DÙNG PHƯƠNG THỨC DELETE
  * http://localhost:3000/products/deletepro/?
  */
 router.delete("/deletepro/:id", async (req, res) => {

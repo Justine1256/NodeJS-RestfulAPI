@@ -1,11 +1,11 @@
-// http://localhost:3000/catagories: viết các routes và server "giao tiếp" với user
+// http://localhost:3000/categories: viết các routes và server "giao tiếp" với user
 var express = require("express");
 var router = express.Router();
 const categoryController = require("../mongo/category.controller");
 
 /**
  * Render giao diện
- * http://localhost:3000/catagories/
+ * http://localhost:3000/categories/
  */
 router.get("/", async (req, res) => {
   try {
@@ -23,10 +23,9 @@ router.get("/", async (req, res) => {
   }
 });
 
-
 /**
  * Thêm danh mục
- * http://localhost:3000/catagories/addcatagory
+ * http://localhost:3000/categories/addcatagory
  */
 router.post("/addcatagory", async (req, res) => {
   try {
@@ -47,7 +46,6 @@ router.post("/addcatagory", async (req, res) => {
 
     // Tạo danh mục mới và thêm vào mảng
     const cateNew = {
-      // id: catagories.length + 1,
       name: name,
     };
 
@@ -69,7 +67,7 @@ router.post("/addcatagory", async (req, res) => {
 
 /**
  * Cập nhật danh mục
- * // http://localhost:3000/catagories/update/1
+ * // http://localhost:3000/categories/update/1
  */
 router.put("/update/:id", async (req, res) => {
   try {
@@ -99,10 +97,9 @@ router.put("/update/:id", async (req, res) => {
 
 /**
  * Xóa dữ liệu
- * http://localhost:3000/catagories/delete/?
+ * http://localhost:3000/categories/delete/
  */
 router.delete("/delete/:id", async (req, res) => {
-
   try {
     const { id } = req.params;
     const result = await categoryController.deleteCate(id);
@@ -111,7 +108,6 @@ router.delete("/delete/:id", async (req, res) => {
       message: "Category deleted successfully",
       data: result,
     });
-
   } catch (error) {
     console.error("Failed to update category: ", error);
     return res.status(500).json({
@@ -120,4 +116,5 @@ router.delete("/delete/:id", async (req, res) => {
     });
   }
 });
+
 module.exports = router;

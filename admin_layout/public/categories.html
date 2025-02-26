@@ -40,33 +40,69 @@
           </a>
         </div> -->
     </nav>
-    <div class="container best">
-      <div class="cols-2">
-        <h1>BRANDS</h1>
-        <button>+ Add brand</button>
+
+    <div class="" style="width: 80%" id="category-main">
+      <div>
+        <div class="cols-2">
+          <h1>CATEGORIES</h1>
+          <button onclick="postCategory(); fetchCategories();">+ Add category</button>
+
+        </div>
+        <!-- <input class="search-bar" type="text" placeholder="Search Brand" /> -->
       </div>
-      <input class="search-bar" type="text" placeholder="Search Brand" />
-      <table>
+
+      <table id="categories-table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Brand name</th>
-            <th>Products</th>
-            <th>Actions</th>
+            <th>
+              ID
+              <div class="sort-btn">
+                <a><i class="bi bi-chevron-compact-up"></i></a>
+                <a><i class="bi bi-chevron-compact-down"></i></a>
+              </div>
+            </th>
+            <th>
+              Category name
+              <div class="sort-btn">
+                <a><i class="bi bi-chevron-compact-up"></i></a
+                ><a><i class="bi bi-chevron-compact-down"></i></a>
+              </div>
+            </th>
+            <th>Action</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>id</td>
-            <td>name</td>
-            <td>Product counts</td>
-            <td class="action-icons">
-              <a href="">Edit</a> /
-              <a href="">Unactive</a>
-            </td>
-          </tr>
-        </tbody>
+        <tbody id="alllist" class=""></tbody>
       </table>
     </div>
+
+    <!-- Inline Edit Form -->
+    <div
+      id="editFormContainer"
+      class="edit-form-container p-20"
+      style="
+        display: none;
+        border: 1px solid;
+        flex-direction: column;
+        gap: 10px;
+      "
+    >
+      <form>
+        <h3><label for="editName">Category name</label></h3>
+        <input
+          type="text"
+          id="editName"
+          placeholder="Enter category title"
+          required
+        />
+      </form>
+      <!-- <button></button> -->
+    </div>
+    <script src="./categories.js"></script>
+    <style>
+      .edit-form-container {
+        margin: 50px auto;
+        width: 30%;
+      }
+    </style>
   </body>
 </html>

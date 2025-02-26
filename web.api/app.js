@@ -43,7 +43,7 @@ mongoose
 app.use("/", indexRouter); //Người dùng vào đường dẫn http://localhost:3000/
 app.use("/users", usersRouter); //Người dùng vào đường dẫn http://localhost:3000/users
 app.use("/products", productsRouter); //Người dùng vào đường dẫn http://localhost:3000/products
-app.use("/catagories", catagoriesRouter); //Người dùng vào đường dẫn http://localhost:3000/catagories
+app.use("/categories", catagoriesRouter); //Người dùng vào đường dẫn http://localhost:3000/categories
 app.use("/inventors", inventorsRouter); //Người dùng vào đường dẫn http://localhost:3000/inventors
 app.use("/add-inventor", addInventorsRouter); //Người dùng vào đường dẫn http://localhost:3000/add-inventors
 
